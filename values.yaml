@@ -73,21 +73,8 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 100
   targetCPUUtilizationPercentage: 5
-  # targetMemoryUtilizationPercentage: 80
-#   metrics:
-#   - type: Resource
-#     resource:
-#       name: cpu
-#       target:
-#         type: Utilization
-#         averageUtilization: 50
-#   - type: Resource
-#     resource:
-#       name: memory
-#       target:
-#         type: Utilization
-#         averageUtilization: 80
-#       targetValue: 500Mi
+  targetMemoryUtilizationPercentage: 80
+
 
 nodeSelector: {}
 
